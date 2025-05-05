@@ -13,7 +13,7 @@ pipeline {
         stage('Run Docker Container') {
             steps {
                 script {
-                    dockerImage.run("-d -p 8080:80")
+                    dockerImage.run("-d -p 1101:80")
                 }
             }
         }
